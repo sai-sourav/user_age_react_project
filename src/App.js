@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import "./App.css";
 import Form from "./components/form";
 import UsersList from "./components/users_list";
@@ -31,17 +31,17 @@ function App() {
   }
 
   return (
-    <div>
+    <Fragment>
       {result}
-      <div>
+      <Fragment>
         <section id="user-form" className="user-form">
           <Form callbackfromApp={formdata}></Form>
         </section>
         <section id="users">
           <UsersList list={list}></UsersList>
         </section>
-      </div>
-    </div>
+      </Fragment>
+    </Fragment>
   );
 }
 

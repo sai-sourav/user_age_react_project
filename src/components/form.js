@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './form.css';
+import Wrapper from './helpers/wrapper';
 
 const Form = (props) => {
     const [username, changeusename] = useState('');
@@ -20,7 +21,7 @@ const Form = (props) => {
         ChangeAge(e.target.value)
     }
     return (
-        <div>
+        <Wrapper>
             <form onSubmit={SubmitHandler}>
                 <div id="forminputs" className='form-control'>
                     <label htmlFor='user'>Username:</label>
@@ -32,7 +33,7 @@ const Form = (props) => {
                     <button type='submit'>Add user</button>
                 </div>
             </form>
-        </div>
+        </Wrapper>
     )
 }
 
