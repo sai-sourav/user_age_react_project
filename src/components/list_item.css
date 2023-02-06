@@ -1,0 +1,12 @@
+.item {
+    border: 2px;
+    background-color: blueviolet;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 1rem;
+}

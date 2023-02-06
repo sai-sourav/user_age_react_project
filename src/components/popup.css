@@ -1,0 +1,41 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.655);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  width: 30rem;
+  max-width: 90%;
+  margin: 3rem auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.popup-Header {
+  background: #4f005f;
+  padding: 1rem;
+}
+
+.popup-Header h2 {
+  margin: 0;
+  color: white;
+}
+
+.popup-content {
+  padding: 1rem;
+}
+
+.popup-action {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
