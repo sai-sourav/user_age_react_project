@@ -8,14 +8,17 @@ const Form = (props) => {
 
     const usernameinput = useRef();
     const ageinput = useRef();
+    const collegeinput = useRef();
 
     const SubmitHandler = (evt) => {
         evt.preventDefault();
         const username = usernameinput.current.value;
         const age = ageinput.current.value;
-        props.callbackfromApp({username: username, age: age});
+        const collegename = collegeinput.current.value;
+        props.callbackfromApp({username: username, age: age, collegename: collegename});
         usernameinput.current.value = '';
         ageinput.current.value = '';
+        collegeinput.current.value = '';
         // changeusename('')
         // ChangeAge('')
     }
@@ -27,6 +30,8 @@ const Form = (props) => {
                     <input type="text" id='user' name='username' ref={usernameinput}></input>
                     <label htmlFor='Age'>Age:</label>
                     <input type="number" id='Age' name='age' ref={ageinput}></input>
+                    <label htmlFor='College'>College Name:</label>
+                    <input type="text" id='College' name='College' ref={collegeinput}></input>
                 </div>
                 <div id="formactions">
                     <button type='submit'>Add user</button>

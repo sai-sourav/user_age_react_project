@@ -10,7 +10,7 @@ function App() {
   const [type, setType] = useState("");
 
   const formdata = (data) => {
-    if (data.username.trim().length === 0 || data.age === "") {
+    if (data.username.trim().length === 0 || data.age === "" || data.collegename === "") {
       setIsOpen(true);
       setType("invalidinput");
       return;

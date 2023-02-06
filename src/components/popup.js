@@ -6,7 +6,7 @@ const Popup = (props) => {
   const ErrorPopup = (props) => {
     let content = "Please enter a valid Age (age > 0)";
     if (props.type === "invalidinput") {
-      content = "Please enter valid Name or Age(non-empty-values)";
+      content = "Please enter valid Name or Age or College (non-empty-values)";
     }
     return (
       <div onClick={() => props.callbackfromApp()} className="popup-overlay">
